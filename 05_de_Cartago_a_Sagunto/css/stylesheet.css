@@ -1,0 +1,335 @@
+@page {margin: 10px;}
+
+@font-face { font-family:"EB Garamond";    font-style:normal; font-weight:normal; src:url("../fonts/EBGaramond-Regular.otf"); }
+@font-face { font-family:"EB Garamond";    font-style:italic; font-weight:normal; src:url("../fonts/EBGaramond-Italic.otf"); }
+
+sup {
+  font-size: 0.675em;
+  line-height: 1.2;
+  vertical-align: super;
+  vertical-align: 35%;
+  }
+body {
+  font-family:"EB Garamond", serif;
+  line-height: 1.2;
+  margin-left:.5em;
+  margin-right:.5em;
+  }
+ol.toc li { 
+list-style-type: none; 
+margin: 0; 
+padding: 0; 
+  }
+h1 { 
+  text-align:center; 
+  margin-top:3em;
+  margin-bottom:3em;
+  font-variant: common-ligatures lining-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "lnum", "pnum";
+  adobe-hyphenate: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+}
+h1.title { 
+  text-align:center; 
+  font-size:1.66em;
+  font-weight:bold;
+}
+h1.unnumbered { 
+  display:none;
+}
+p.author { 
+  text-align:center; 
+  text-indent:0;
+  font-size:1.33em;
+  font-weight:bold;
+}
+h2 { 
+  text-align:center; 
+  font-variant: common-ligatures lining-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "lnum", "pnum";
+  adobe-hyphenate: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+}
+
+p.pagebreak { page-break-after:always; }
+
+p { 
+  text-indent:2em; 
+  text-align:justify; 
+  margin-top:0;
+  margin-bottom:0;
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+ -webkit-hyphenate-limit-before: 3;
+  -webkit-hyphenate-limit-after: 2;
+  -ms-hyphenate-limit-chars: 6 3 2;
+  hyphenate-limit-chars: 6 3 2;
+  -webkit-hyphenate-limit-lines: 2;
+  hyphenate-limit-lines: 2;
+}
+p.ind { 
+  text-indent:0em; 
+  text-align:left; 
+  margin-left:8em;
+  margin-top:0em;
+  margin-bottom:0em;
+  font-size:smaller;
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+}
+p.ind2 { 
+  text-indent:0em; 
+  text-align:left; 
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+}
+p.ind3 { 
+  text-indent:2em; 
+  text-align:justify; 
+  margin-left:2em;
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+}
+p.ind4{ 
+  text-indent:0em; 
+  text-align:justify; 
+  margin-left:7em;
+  font-size:smaller;
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+}
+p.center { 
+  text-indent:0em; 
+  text-align:center; 
+  margin:auto;
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+  adobe-hyphenate: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+}
+p.justify
+{
+  margin-left: 35%;
+  text-indent: 2em;
+  text-align: justify;
+}
+p.right {
+  text-align:right; 
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+  adobe-hyphenate: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+}
+p.epigraph
+{
+  text-align: justify;
+  text-indent: 2em;
+  margin-left:35%;
+  margin-right:0%;
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+  adobe-hyphenate: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+}
+div.center                          /* cf. pandoc --lua-filter */
+{
+  width:100%;
+  margin: 0 auto;
+  text-align: center;
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+  adobe-hyphenate: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+}
+div.right                           /* cf. pandoc --lua-filter */
+{
+  width:100%;
+  margin-left: 0;
+  text-align: right;
+  font-variant:small-caps;
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+  adobe-hyphenate: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+}
+div.right2                          /* cf. pandoc --lua-filter */
+{
+  width:100%;
+  margin-left: 0;
+  text-align: right;
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+  adobe-hyphenate: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+}
+div.epigraph
+{
+  text-align: justify;
+  text-indent: 2em;
+  margin-left:35%;
+  margin-right:0%;
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+  adobe-hyphenate: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+}
+span.epigraph
+{
+  text-indent: 2em;
+  text-size: smaller;
+  margin-left:35%;
+  margin-right:0%;
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+  adobe-hyphenate: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+}
+span.epigauth
+{
+  text-indent: 2em;
+  text-size: smaller;
+  margin-left:35%;
+  margin-right:0%;
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+  adobe-hyphenate: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+}
+span.smallcaps {                   /* pandoc class="smallcaps" */
+  font-variant: small-caps; 
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+  adobe-hyphenate: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+} 
+.sc {
+  font-variant:small-caps;
+  font-size:smaller;
+  text-align:right; 
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+  adobe-hyphenate: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+}
+.sc2 {
+  font-variant:small-caps;
+  font-size:smaller;
+  text-align:center; 
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+  adobe-hyphenate: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+}
+.sc3 {
+  display:inline;
+  font-variant:small-caps;
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+  adobe-hyphenate: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+}
+.blkq
+{
+  text-indent: 2em;
+  margin-left:0%;
+  margin-right:0% !important;
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+  adobe-hyphenate: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+}
+.footer
+{
+  margin-left:0%;
+  margin-right:0% !important;
+}
+blockquote {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 0px;
+}
