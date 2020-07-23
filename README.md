@@ -4,11 +4,11 @@ Benito Pérez Galdós was the leading literary figure of 19th century Spain. One
 
 This is is the fifth series of Benito Pérez Galdós' celebrated  *Episodios nacionales*. It comprises the following six novels:
 
-1. España_sin_rey
-2. España_trágica
-3. Amadeo_I
-4. La_Primera_República
-5. De_Cartago_a_Sagunto
+1. España sin rey
+2. España trágica
+3. Amadeo I
+4. La Primera República
+5. De Cartago a Sagunto
 6. Cánovas
 
 # Structure 
